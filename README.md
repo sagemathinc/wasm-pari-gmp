@@ -28,6 +28,12 @@ You need to install [emscripten](https://emscripten.org/docs/getting_started/dow
 npm run build
 ```
 
-## Problems
+## Problems/TODO
 
-Try `gp(factor(2^2001+1))` and hit control+c to try to interrupt the running computation.  It terminates the Node.js interpreter as well, and there is no way to catch this.
+### Interrupting running code
+
+Try `gp(factor(2^2001+1))` and hit control+c to try to interrupt the running computation. It terminates the Node.js interpreter as well, and there is no way to catch this.
+
+### Using with webpack5 in your browser
+
+Make it easy  to use this in frontend browser code bundled up using webpack.
