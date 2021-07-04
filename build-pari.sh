@@ -4,7 +4,7 @@ cd $BUILD
 
 ### Now build pari
 
-wget https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-$PARI_VERSION.tar.gz
+curl https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-$PARI_VERSION.tar.gz -o pari-$PARI_VERSION.tar.gz
 tar xvf pari-$PARI_VERSION.tar.gz
 cd pari-$PARI_VERSION
 
