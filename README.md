@@ -25,8 +25,10 @@ Promise { <pending> }
 Now square a large number, which should take a few seconds, as compared to Javascript's built in BigInt, which takes "**forever"** (?).  Pari without GMP is also reasonably fast, taking a second longer.
 
 ```js
-> t=new Date();gp('n=10^(10^7)-17; m=n*n; 0'); new Date() - t
+> t=new Date();gp('n=10^(10^7)-17; m=n*n; 0'); new Date() - t  // intel server
 2757
+> t=new Date();gp('n=10^(10^7)-17; m=n*n; 0'); new Date() - t  // Apple M1
+1573
 > t=new Date(); n=BigInt(10)**BigInt(10**7)-BigInt(17); m=n*n; new Date()-t
 ... I gave up after a minute
 ```
